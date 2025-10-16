@@ -7,20 +7,24 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "chakra:typegen": "chakra typegen src/styles/theme.ts --strict"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/input": "^2.1.2",
     "@chakra-ui/react": "^3.27.1",
     "@emotion/react": "^11.14.0",
+    "framer-motion": "^12.23.24",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "swiper": "^12.0.2"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
+    "@chakra-ui/cli": "^3.27.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

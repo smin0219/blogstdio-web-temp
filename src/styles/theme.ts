@@ -1,8 +1,8 @@
-import { defineConfig } from "@chakra-ui/react";
+import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
 import colors from "./colors";
 import textStyles from "./text-style";
 
-export const config = defineConfig({
+const config = defineConfig({
   globalCss: {
     html: {
       fontSize: "16px",
@@ -20,3 +20,5 @@ export const config = defineConfig({
     textStyles,
   },
 });
+
+export const system = createSystem(defaultConfig, config);

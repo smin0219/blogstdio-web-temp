@@ -1,5 +1,5 @@
-import { Provider } from "@/components/ui/provider";
-import type {ReactNode} from "react";
+import type { ReactNode } from "react";
+import { Provider } from "@/ui/provider";
 
 export default function RootLayout({
   children,

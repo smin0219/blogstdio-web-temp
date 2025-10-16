@@ -14,8 +14,7 @@ import {
 import { useRouter } from "next/navigation";
 import type React from "react";
 import { useState } from "react";
-import { LuEyeOff } from "react-icons/lu";
-import { LuEye } from "react-icons/lu";
+import { LuEye, LuEyeOff } from "react-icons/lu";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -52,7 +51,15 @@ export default function LoginForm() {
     >
       <Container maxW="lg" w="full">
         <VStack gap={10} w="full">
-          <Box w="full" maxW="560px" mx="auto" shadow="2xl" bg="white" borderRadius="2xl" p={10}>
+          <Box
+            w="full"
+            maxW="560px"
+            mx="auto"
+            shadow="2xl"
+            bg="white"
+            borderRadius="2xl"
+            p={10}
+          >
             <Box pb={4}>
               <Heading size="md" textAlign="center" color="gray.700">
                 로그인
@@ -62,7 +69,11 @@ export default function LoginForm() {
               <form onSubmit={handleSubmit}>
                 <Stack gap={4}>
                   <Field.Root required>
-                    <Field.Label htmlFor="email" color="gray.700" fontWeight="medium">
+                    <Field.Label
+                      htmlFor="email"
+                      color="gray.700"
+                      fontWeight="medium"
+                    >
                       이메일
                     </Field.Label>
                     <Input
@@ -83,7 +94,11 @@ export default function LoginForm() {
                   </Field.Root>
 
                   <Field.Root required>
-                    <Field.Label htmlFor="password" color="gray.700" fontWeight="medium">
+                    <Field.Label
+                      htmlFor="password"
+                      color="gray.700"
+                      fontWeight="medium"
+                    >
                       비밀번호
                     </Field.Label>
                     <Box position="relative">
