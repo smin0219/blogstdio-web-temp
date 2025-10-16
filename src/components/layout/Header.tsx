@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <>
       {/* 헤더 */}
-      <Box display="flex" justifyContent="space-between" p="20px 40px">
+      <Box display="flex" justifyContent="space-between" p="3vh 2.5vw">
         <HStack w="full" justifyContent="space-between">
           <HStack gap={2}>
             <IconButton

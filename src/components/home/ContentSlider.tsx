@@ -30,12 +30,13 @@ export default function ContentSlider() {
 
   // 카드 기본 설정
   const cardWidth = 430;
-  const gap = 0; // 🔹 간격 완전 제거
+  const gap = 10; //
 
   return (
     <Flex
       w="full"
-      h="700px"
+      h="600px"
+      pb={"50px"}
       overflow="hidden"
       position="relative"
       justify="center"
@@ -53,7 +54,7 @@ export default function ContentSlider() {
       >
         {slides.map((slide, i) => {
           const offset = i - index;
-          const translateX = offset * (cardWidth + 10);
+          const translateX = offset * (cardWidth + gap);
 
           return (
             <motion.div
@@ -158,7 +159,7 @@ export default function ContentSlider() {
       )}
 
       {/* 페이지 인디케이터 */}
-      <HStack position="absolute" bottom="30px" gap={4}>
+      <HStack position="absolute" bottom="0px" gap={4}>
         {slides.slice(0, slides.length - 2).map((s, i) => (
           <Circle
             key={s.id}

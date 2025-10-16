@@ -9,6 +9,14 @@ export default function Page() {
     <>
       <Header />
       <ContentSlider />
+      <Box
+        display={"flex"}
+        w={"full"}
+        p={"15vh 20vw"}
+        justifyContent={"center"}
+      >
+        인기 카테고리
+      </Box>
     </>
   );
 }
