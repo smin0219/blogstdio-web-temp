@@ -162,14 +162,14 @@ export default function ContentSlider() {
         {slides.slice(0, slides.length - 2).map((s, i) => (
           <Circle
             key={s.id}
-            size="25px"
+            size="23px"
             bg={i === index ? "blackAlpha.900" : "blackAlpha.400"}
             cursor="pointer"
             onClick={() => setIndex(i)}
             transition="all 0.3s"
           >
             <Text
-              textStyle={"body/bold_16/multi"}
+              textStyle={"body/bold_14/multi"}
               color={i === index ? "white" : "black"}
             >
               {i + 1}
