@@ -4,7 +4,7 @@ import {
   IconButton,
   Text,
   Drawer,
-  useDisclosure,
+  useDisclosure, Button,
 } from "@chakra-ui/react";
 import { LuMenu, LuSearch, LuX } from "react-icons/lu";
 
@@ -37,16 +37,20 @@ export default function Header() {
             </IconButton>
             <Text textStyle="body/bold_16/multi">blogstdio.</Text>
           </HStack>
-
-          <IconButton
-            bg="bs.white"
-            color="bs.black"
-            _hover={{ bg: "bs.gray.100" }}
-            aria-label="search"
-            onClick={onSearchOpen}
-          >
-            <LuSearch />
-          </IconButton>
+          <HStack gap={"30px"}>
+            <IconButton
+              bg="bs.white"
+              color="bs.black"
+              _hover={{ bg: "bs.gray.100" }}
+              aria-label="search"
+              onClick={onSearchOpen}
+            >
+              <LuSearch />
+            </IconButton>
+            <Button h={"38px"}>
+              블로그 작성
+            </Button>
+          </HStack>
         </HStack>
       </Box>
 
