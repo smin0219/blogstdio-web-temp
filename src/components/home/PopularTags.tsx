@@ -58,9 +58,11 @@ export default function PopularTags() {
             </TagRoot>
           ))}
         </SimpleGrid>
-        <Text fontSize="sm" color="gray.500" textAlign="center">
-          태그를 클릭해 관련 블로그를 탐색해보세요
-        </Text>
+        <Box mt={10}>
+          <Text fontSize="sm" color="gray.500" textAlign="center">
+            태그를 클릭해 관련 블로그를 탐색해보세요
+          </Text>
+        </Box>
       </VStack>
     </Box>
   );

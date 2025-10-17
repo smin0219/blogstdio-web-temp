@@ -6,9 +6,11 @@ import {
   Drawer,
   useDisclosure, Button,
 } from "@chakra-ui/react";
-import { LuMenu, LuSearch, LuX } from "react-icons/lu";
+import { LuMenu, LuSearch, LuX, LuArrowLeft } from "react-icons/lu";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+  const router = useRouter();
   const {
     open: isMenuOpen,
     onOpen: onMenuOpen,
@@ -20,6 +22,14 @@ export default function Header() {
     onClose: onSearchClose,
   } = useDisclosure();
 
+  const handleWriteBlog = () => {
+    router.push("/editor");
+  };
+
+  const handleGoHome = () => {
+    router.push("/home");
+  };
+
   return (
     <>
       {/* 헤더 */}
@@ -30,10 +40,10 @@ export default function Header() {
               bg="bs.white"
               color="bs.black"
               _hover={{ bg: "bs.gray.100" }}
-              aria-label="menu"
-              onClick={onMenuOpen}
+              aria-label="go home"
+              onClick={handleGoHome}
             >
-              <LuMenu />
+              <LuArrowLeft />
             </IconButton>
             <Text textStyle="body/bold_16/multi" color={"bs.black"}>blogstdio.</Text>
           </HStack>
@@ -47,7 +57,7 @@ export default function Header() {
             >
               <LuSearch />
             </IconButton>
-            <Button h={"38px"} bg={"bs.black"}>
+            <Button h={"38px"} bg={"bs.black"} onClick={handleWriteBlog}>
               블로그 작성
             </Button>
           </HStack>
