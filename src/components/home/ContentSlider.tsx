@@ -29,13 +29,14 @@ export default function ContentSlider() {
   };
 
   // 카드 기본 설정
-  const cardWidth = 430;
+  const cardWidth = 500;
   const gap = 10; //
 
   return (
     <Flex
       w="full"
-      h="600px"
+      h="700px"
+      mt={"50px"}
       pb={"50px"}
       overflow="hidden"
       position="relative"
@@ -62,7 +63,7 @@ export default function ContentSlider() {
               style={{
                 position: "absolute",
                 width: `${cardWidth}px`,
-                height: "500px",
+                height: "600px",
                 cursor: "pointer",
               }}
               animate={{
@@ -163,18 +164,18 @@ export default function ContentSlider() {
         {slides.slice(0, slides.length - 2).map((s, i) => (
           <Circle
             key={s.id}
-            size="23px"
+            size="15px"
             bg={i === index ? "blackAlpha.900" : "blackAlpha.400"}
             cursor="pointer"
             onClick={() => setIndex(i)}
             transition="all 0.3s"
           >
-            <Text
-              textStyle={"body/bold_14/multi"}
-              color={i === index ? "white" : "black"}
-            >
-              {i + 1}
-            </Text>
+            {/*<Text*/}
+            {/*  textStyle={"body/medium_14/multi"}*/}
+            {/*  color={i === index ? "white" : "black"}*/}
+            {/*>*/}
+            {/*  {i + 1}*/}
+            {/*</Text>*/}
           </Circle>
         ))}
       </HStack>
