@@ -76,6 +76,7 @@ export default function RecommendedAuthors() {
               transform: "translateY(-4px)",
               boxShadow: "md",
               transition: "all 0.25s ease",
+              cursor: "pointer",
             }}
           >
             <Image
@@ -129,9 +130,9 @@ export default function RecommendedAuthors() {
           mt={10}
           fontWeight="600"
           _hover={{
-            bg: "black",
+            bg: "bs.green.600",
             color: "white",
-            borderColor: "black",
+            borderColor: "bs.green.600",
             transform: "scale(1.05)",
             transition: "all 0.2s ease",
           }}

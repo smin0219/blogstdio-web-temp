@@ -42,7 +42,7 @@ const colors = defineTokens({
         100: { value: "#FEF8E8" },
       },
       green: {
-        600: { value: "#004632" },
+        600: { value: "#00704A" },
         500: { value: "#006400" },
         400: { value: "#13A913" },
         300: { value: "#54D254" },

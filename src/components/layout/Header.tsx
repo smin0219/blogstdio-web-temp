@@ -35,7 +35,7 @@ export default function Header() {
             >
               <LuMenu />
             </IconButton>
-            <Text textStyle="body/bold_16/multi">blogstdio.</Text>
+            <Text textStyle="body/bold_16/multi" color={"bs.black"}>blogstdio.</Text>
           </HStack>
           <HStack gap={"30px"}>
             <IconButton
@@ -47,7 +47,7 @@ export default function Header() {
             >
               <LuSearch />
             </IconButton>
-            <Button h={"38px"}>
+            <Button h={"38px"} bg={"bs.black"}>
               블로그 작성
             </Button>
           </HStack>

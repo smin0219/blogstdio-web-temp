@@ -48,13 +48,13 @@ export default function PopularTags() {
               py={6}
               px={9}
               _hover={{
-                bg: "black",
+                bg: "bs.green.600",
                 color: "white",
                 transform: "scale(1.05)",
                 transition: "all 0.2s ease",
               }}
             >
-              <TagLabel fontWeight="500">{tag}</TagLabel>
+              <TagLabel textStyle={"body/medium_14/multi"}>{tag}</TagLabel>
             </TagRoot>
           ))}
         </SimpleGrid>

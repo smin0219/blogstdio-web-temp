@@ -165,18 +165,11 @@ export default function ContentSlider() {
           <Circle
             key={s.id}
             size="15px"
-            bg={i === index ? "blackAlpha.900" : "blackAlpha.400"}
+            bg={i === index ? "bs.green.600" : "blackAlpha.400"}
             cursor="pointer"
             onClick={() => setIndex(i)}
             transition="all 0.3s"
-          >
-            {/*<Text*/}
-            {/*  textStyle={"body/medium_14/multi"}*/}
-            {/*  color={i === index ? "white" : "black"}*/}
-            {/*>*/}
-            {/*  {i + 1}*/}
-            {/*</Text>*/}
-          </Circle>
+          />
         ))}
       </HStack>
     </Flex>
